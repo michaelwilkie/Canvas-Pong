@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>Pong</title>
+
+    <style>
+        body, html
+        {
+            //background-image: url("torus_flower_fractal.png");
+            background-color: darkslategray !important;
+            height: 100%;
+        }
+        .row
+        {
+            margin: auto;
+        }
+        canvas
+        {
+            display: inline;
+        }
+        #divLeft
+        {         
+            margin: auto;
+        }
+        #divCenter
+        {
+            border: 4px black;
+        }
+        #column1
+        {
+            display: inline-block;
+            justify-content: center;
+        }       
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+                <div class="col-md-1" style="width: 25%;" id="divLeft" align="center">
+                    <button type="button" style="display: flex; margin: auto;" class="btn btn-primary" onclick="addPuck()">Add puck</button>
+                </div>
+
+            <div id="divCenter" class="col-md-8" style="padding: 5px;">
+                    <canvas id="myCanvas" style="outline: 2px solid black" width="1000" height="600">
+                        Canvas not supported by your browser
+                    </canvas>
+                <div style="color:white;">
+                    As a result of experimentation with JavaScript and HTML Canvas, here is pong.
+                    The program, images, and sounds are made by Michael Wilkie with the help of Microsoft Paint and Audacity.
+                </div>
+            </div>
+            <div class="col-md-3" id="divRight">
+            </div>
+        </div>
+    </div>
+    <script src="pong_functions.js"></script>
+    <script src="scoreboard.js"></script>
+    <script src="entity.js"></script>
+    <script src="trigger.js"></script>
+    <script src="goal.js"></script>
+    <script src="wall.js"></script>
+    <script src="player.js"></script>
+    <script src="computerplayer.js"></script>
+    <script src="powerup.js"></script>
+    <script src="speedpowerup.js"></script>
+    <script src="slowpowerup.js"></script>
+    <script src="puck.js"></script>
+</body>
+
+</html>
